@@ -13,7 +13,38 @@
 		9A82B0A12866F7620013A1DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82B08F2866F7600013A1DB /* ContentView.swift */; };
 		9A82B0A22866F7620013A1DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A82B0902866F7620013A1DB /* Assets.xcassets */; };
 		9A82B0A32866F7620013A1DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A82B0902866F7620013A1DB /* Assets.xcassets */; };
+		9ACC8F212866F8620044B8B8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACC8F202866F8620044B8B8 /* WidgetKit.framework */; };
+		9ACC8F232866F8620044B8B8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACC8F222866F8620044B8B8 /* SwiftUI.framework */; };
+		9ACC8F262866F8620044B8B8 /* healthkit_widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC8F252866F8620044B8B8 /* healthkit_widget.swift */; };
+		9ACC8F292866F8630044B8B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ACC8F282866F8630044B8B8 /* Assets.xcassets */; };
+		9ACC8F2B2866F8630044B8B8 /* healthkit_widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC8F272866F8630044B8B8 /* healthkit_widget.intentdefinition */; };
+		9ACC8F2C2866F8630044B8B8 /* healthkit_widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC8F272866F8630044B8B8 /* healthkit_widget.intentdefinition */; };
+		9ACC8F2F2866F8630044B8B8 /* healthkit-widgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9ACC8F1E2866F8620044B8B8 /* healthkit-widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9ACC8F2D2866F8630044B8B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A82B0892866F7600013A1DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ACC8F1D2866F8620044B8B8;
+			remoteInfo = "healthkit-widgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9ACC8F302866F8630044B8B8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9ACC8F2F2866F8630044B8B8 /* healthkit-widgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9A82B08E2866F7600013A1DB /* Widget_HealthKit_practiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget_HealthKit_practiceApp.swift; sourceTree = "<group>"; };
@@ -22,6 +53,13 @@
 		9A82B0952866F7620013A1DB /* Widget-HealthKit-practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Widget-HealthKit-practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A82B09B2866F7620013A1DB /* Widget-HealthKit-practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Widget-HealthKit-practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A82B09D2866F7620013A1DB /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		9ACC8F1E2866F8620044B8B8 /* healthkit-widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "healthkit-widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ACC8F202866F8620044B8B8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		9ACC8F222866F8620044B8B8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9ACC8F252866F8620044B8B8 /* healthkit_widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthkit_widget.swift; sourceTree = "<group>"; };
+		9ACC8F272866F8630044B8B8 /* healthkit_widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = healthkit_widget.intentdefinition; sourceTree = "<group>"; };
+		9ACC8F282866F8630044B8B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9ACC8F2A2866F8630044B8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +77,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9ACC8F1B2866F8620044B8B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ACC8F232866F8620044B8B8 /* SwiftUI.framework in Frameworks */,
+				9ACC8F212866F8620044B8B8 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -47,6 +94,8 @@
 			children = (
 				9A82B08D2866F7600013A1DB /* Shared */,
 				9A82B09C2866F7620013A1DB /* macOS */,
+				9ACC8F242866F8620044B8B8 /* healthkit-widget */,
+				9ACC8F1F2866F8620044B8B8 /* Frameworks */,
 				9A82B0962866F7620013A1DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +115,7 @@
 			children = (
 				9A82B0952866F7620013A1DB /* Widget-HealthKit-practice.app */,
 				9A82B09B2866F7620013A1DB /* Widget-HealthKit-practice.app */,
+				9ACC8F1E2866F8620044B8B8 /* healthkit-widgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +128,26 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		9ACC8F1F2866F8620044B8B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9ACC8F202866F8620044B8B8 /* WidgetKit.framework */,
+				9ACC8F222866F8620044B8B8 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9ACC8F242866F8620044B8B8 /* healthkit-widget */ = {
+			isa = PBXGroup;
+			children = (
+				9ACC8F252866F8620044B8B8 /* healthkit_widget.swift */,
+				9ACC8F272866F8630044B8B8 /* healthkit_widget.intentdefinition */,
+				9ACC8F282866F8630044B8B8 /* Assets.xcassets */,
+				9ACC8F2A2866F8630044B8B8 /* Info.plist */,
+			);
+			path = "healthkit-widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,10 +158,12 @@
 				9A82B0912866F7620013A1DB /* Sources */,
 				9A82B0922866F7620013A1DB /* Frameworks */,
 				9A82B0932866F7620013A1DB /* Resources */,
+				9ACC8F302866F8630044B8B8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9ACC8F2E2866F8630044B8B8 /* PBXTargetDependency */,
 			);
 			name = "Widget-HealthKit-practice (iOS)";
 			productName = "Widget-HealthKit-practice (iOS)";
@@ -115,6 +187,23 @@
 			productReference = 9A82B09B2866F7620013A1DB /* Widget-HealthKit-practice.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9ACC8F1D2866F8620044B8B8 /* healthkit-widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ACC8F332866F8630044B8B8 /* Build configuration list for PBXNativeTarget "healthkit-widgetExtension" */;
+			buildPhases = (
+				9ACC8F1A2866F8620044B8B8 /* Sources */,
+				9ACC8F1B2866F8620044B8B8 /* Frameworks */,
+				9ACC8F1C2866F8620044B8B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "healthkit-widgetExtension";
+			productName = "healthkit-widgetExtension";
+			productReference = 9ACC8F1E2866F8620044B8B8 /* healthkit-widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -129,6 +218,9 @@
 						CreatedOnToolsVersion = 13.4.1;
 					};
 					9A82B09A2866F7620013A1DB = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					9ACC8F1D2866F8620044B8B8 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -148,6 +240,7 @@
 			targets = (
 				9A82B0942866F7620013A1DB /* Widget-HealthKit-practice (iOS) */,
 				9A82B09A2866F7620013A1DB /* Widget-HealthKit-practice (macOS) */,
+				9ACC8F1D2866F8620044B8B8 /* healthkit-widgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -169,6 +262,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9ACC8F1C2866F8620044B8B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ACC8F292866F8630044B8B8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -176,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ACC8F2C2866F8630044B8B8 /* healthkit_widget.intentdefinition in Sources */,
 				9A82B0A02866F7620013A1DB /* ContentView.swift in Sources */,
 				9A82B09E2866F7620013A1DB /* Widget_HealthKit_practiceApp.swift in Sources */,
 			);
@@ -190,7 +292,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9ACC8F1A2866F8620044B8B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ACC8F262866F8620044B8B8 /* healthkit_widget.swift in Sources */,
+				9ACC8F2B2866F8630044B8B8 /* healthkit_widget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9ACC8F2E2866F8630044B8B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ACC8F1D2866F8620044B8B8 /* healthkit-widgetExtension */;
+			targetProxy = 9ACC8F2D2866F8630044B8B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9A82B0A42866F7620013A1DB /* Debug */ = {
@@ -305,6 +424,7 @@
 		9A82B0A72866F7620013A1DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -335,6 +455,7 @@
 		9A82B0A82866F7620013A1DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -419,6 +540,65 @@
 			};
 			name = Release;
 		};
+		9ACC8F312866F8630044B8B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G3YY3Y77Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "healthkit-widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "healthkit-widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.dd2d.Widget-HealthKit-practice.healthkit-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9ACC8F322866F8630044B8B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9G3YY3Y77Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "healthkit-widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "healthkit-widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.dd2d.Widget-HealthKit-practice.healthkit-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -445,6 +625,15 @@
 			buildConfigurations = (
 				9A82B0AA2866F7620013A1DB /* Debug */,
 				9A82B0AB2866F7620013A1DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ACC8F332866F8630044B8B8 /* Build configuration list for PBXNativeTarget "healthkit-widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ACC8F312866F8630044B8B8 /* Debug */,
+				9ACC8F322866F8630044B8B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
