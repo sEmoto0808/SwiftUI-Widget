@@ -20,6 +20,7 @@
 		9ACC8F2B2866F8630044B8B8 /* healthkit_widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC8F272866F8630044B8B8 /* healthkit_widget.intentdefinition */; };
 		9ACC8F2C2866F8630044B8B8 /* healthkit_widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC8F272866F8630044B8B8 /* healthkit_widget.intentdefinition */; };
 		9ACC8F2F2866F8630044B8B8 /* healthkit-widgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9ACC8F1E2866F8620044B8B8 /* healthkit-widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9ACC8F39286720BE0044B8B8 /* SimpleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC8F35286720A10044B8B8 /* SimpleEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		9ACC8F272866F8630044B8B8 /* healthkit_widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = healthkit_widget.intentdefinition; sourceTree = "<group>"; };
 		9ACC8F282866F8630044B8B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ACC8F2A2866F8630044B8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ACC8F35286720A10044B8B8 /* SimpleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,12 +142,21 @@
 		9ACC8F242866F8620044B8B8 /* healthkit-widget */ = {
 			isa = PBXGroup;
 			children = (
+				9ACC8F34286720790044B8B8 /* Model */,
 				9ACC8F252866F8620044B8B8 /* healthkit_widget.swift */,
 				9ACC8F272866F8630044B8B8 /* healthkit_widget.intentdefinition */,
 				9ACC8F282866F8630044B8B8 /* Assets.xcassets */,
 				9ACC8F2A2866F8630044B8B8 /* Info.plist */,
 			);
 			path = "healthkit-widget";
+			sourceTree = "<group>";
+		};
+		9ACC8F34286720790044B8B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9ACC8F35286720A10044B8B8 /* SimpleEntry.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ACC8F39286720BE0044B8B8 /* SimpleEntry.swift in Sources */,
 				9ACC8F262866F8620044B8B8 /* healthkit_widget.swift in Sources */,
 				9ACC8F2B2866F8630044B8B8 /* healthkit_widget.intentdefinition in Sources */,
 			);
@@ -552,7 +564,7 @@
 				INFOPLIST_FILE = "healthkit-widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "healthkit-widget";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -565,7 +577,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -581,7 +593,7 @@
 				INFOPLIST_FILE = "healthkit-widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "healthkit-widget";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -594,7 +606,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

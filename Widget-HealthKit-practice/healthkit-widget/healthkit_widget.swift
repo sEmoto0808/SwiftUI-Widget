@@ -9,7 +9,9 @@ import WidgetKit
 import SwiftUI
 import Intents
 
-struct Provider: IntentTimelineProvider {
+struct MyHealthProvider: IntentTimelineProvider {
+
+    // MARK: デフォルトのViewで表示するデータを返す
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date(), configuration: ConfigurationIntent())
     }
@@ -35,16 +37,25 @@ struct Provider: IntentTimelineProvider {
     }
 }
 
-struct SimpleEntry: TimelineEntry {
-    let date: Date
-    let configuration: ConfigurationIntent
-}
+
 
 struct healthkit_widgetEntryView : View {
-    var entry: Provider.Entry
+    var entry: MyHealthProvider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+
+        VStack(alignment: .leading, spacing: 20) {
+
+            Text("Hello, Widget")
+                .font(.title)
+                .bold()
+
+            Text(entry.date, style: .time)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+        .widgetURL(URL(string: "example://widget_deeplink"))
+
+
     }
 }
 
@@ -53,7 +64,7 @@ struct healthkit_widget: Widget {
     let kind: String = "healthkit_widget"
 
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
+        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: MyHealthProvider()) { entry in
             healthkit_widgetEntryView(entry: entry)
         }
         .configurationDisplayName("My Widget")
