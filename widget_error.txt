@@ -1,0 +1,21 @@
+Details
+
+SendProcessControlEvent:toPid: encountered an error: Error Domain=com.apple.dt.deviceprocesscontrolservice Code=8 "Failed to show Widget 'jp.dd2d.Widget-HealthKit-practice.healthkit-widget' error: Error Domain=FBSOpenApplicationServiceErrorDomain Code=5 "The request to open "com.apple.springboard" failed." UserInfo={NSLocalizedDescription=The request to open "com.apple.springboard" failed., NSLocalizedFailureReason=Unexpected error type., NSUnderlyingError=0x6000013e4450 {Error Domain=BSServiceConnectionErrorDomain Code=3 "XPC error received on message reply handler" UserInfo={BSErrorCodeDescription=OperationFailed, NSLocalizedFailureReason=XPC error received on message reply handler}}, BSErrorCodeDescription=InvalidResponse}." UserInfo={NSLocalizedDescription=Failed to show Widget 'jp.dd2d.Widget-HealthKit-practice.healthkit-widget' error: Error Domain=FBSOpenApplicationServiceErrorDomain Code=5 "The request to open "com.apple.springboard" failed." UserInfo={NSLocalizedDescription=The request to open "com.apple.springboard" failed., NSLocalizedFailureReason=Unexpected error type., NSUnderlyingError=0x6000013e4450 {Error Domain=BSServiceConnectionErrorDomain Code=3 "XPC error received on message reply handler" UserInfo={BSErrorCodeDescription=OperationFailed, NSLocalizedFailureReason=XPC error received on message reply handler}}, BSErrorCodeDescription=InvalidResponse}., NSUnderlyingError=0x6000013e4780 {Error Domain=FBSOpenApplicationServiceErrorDomain Code=5 "The request to open "com.apple.springboard" failed." UserInfo={NSLocalizedDescription=The request to open "com.apple.springboard" failed., NSLocalizedFailureReason=Unexpected error type., NSUnderlyingError=0x6000013e4450 {Error Domain=BSServiceConnectionErrorDomain Code=3 "XPC error received on message reply handler" UserInfo={BSErrorCodeDescription=OperationFailed, NSLocalizedFailureReason=XPC error received on message reply handler}}, BSErrorCodeDescription=InvalidResponse}}}
+Domain: DTXMessage
+Code: 1
+User Info: {
+    DVTErrorCreationDateKey = "2022-06-26 09:22:30 +0000";
+}
+--
+
+
+System Information
+
+macOS Version 12.4 (Build 21F79)
+Xcode 13.4.1 (20504) (Build 13F100)
+Timestamp: 2022-06-26T18:22:30+09:00
+
+
+healthkit-widgetExtension[42409:7942193] [default] LaunchServices: disconnect event interruption received for service com.apple.lsd.mapdb
+dyld4 config: DYLD_FRAMEWORK_PATH=/Users/sh0/Library/Developer/Xcode/DerivedData/Widget-HealthKit-practice-bfiwwfqlycnsbkfdtiildqyoztcd/Build/Products/Debug-iphonesimulator DYLD_LIBRARY_PATH=/Users/sh0/Library/Developer/Xcode/DerivedData/Widget-HealthKit-practice-bfiwwfqlycnsbkfdtiildqyoztcd/Build/Products/Debug-iphonesimulator DYLD_ROOT_PATH=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot
+CoreSimulator 802.6.1 - Device: iPhone 12 (C26C2F75-73FF-4504-9A6F-1CEAD22A232E) - Runtime: iOS 15.5 (19F70) - DeviceType: iPhone 12
