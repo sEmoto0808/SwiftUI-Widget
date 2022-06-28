@@ -63,6 +63,7 @@
 		9ACC8F282866F8630044B8B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ACC8F2A2866F8630044B8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9ACC8F35286720A10044B8B8 /* SimpleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEntry.swift; sourceTree = "<group>"; };
+		9AFDC6B6286B165E00951770 /* Widget-HealthKit-practice--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Widget-HealthKit-practice--iOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 		9A82B0882866F7600013A1DB = {
 			isa = PBXGroup;
 			children = (
+				9AFDC6B6286B165E00951770 /* Widget-HealthKit-practice--iOS--Info.plist */,
 				9A500690286838AB00DFFE59 /* healthkit-widgetExtension.entitlements */,
 				9A50068D286836CA00DFFE59 /* Widget-HealthKit-practice (iOS).entitlements */,
 				9A82B08D2866F7600013A1DB /* Shared */,
@@ -405,6 +407,8 @@
 				DEVELOPMENT_TEAM = 9G3YY3Y77Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Widget-HealthKit-practice--iOS--Info.plist";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "read health care data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -437,6 +441,8 @@
 				DEVELOPMENT_TEAM = 9G3YY3Y77Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Widget-HealthKit-practice--iOS--Info.plist";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "read health care data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -7,7 +7,7 @@
 		<key>Widget-HealthKit-practice (iOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>Widget-HealthKit-practice (macOS).xcscheme_^#shared#^_</key>
 		<dict>
@@ -17,7 +17,20 @@
 		<key>healthkit-widgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9A82B0942866F7620013A1DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9ACC8F1D2866F8620044B8B8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

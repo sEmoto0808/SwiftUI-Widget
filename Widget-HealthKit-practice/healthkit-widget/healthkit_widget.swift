@@ -42,26 +42,41 @@ struct MyHealthProvider: IntentTimelineProvider {
             // 今回は歩数を取得
             let healthStore = HKHealthStore()
 
-            let calendar = Calendar.current
-            let hkTypeStepCount = HKObjectType.quantityType(forIdentifier: .stepCount)!
+            let readTypes = Set([
+                HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount )!
+            ])
 
-            let today = calendar.dateComponents([.calendar, .year, .month, .day], from: Date())
-            let startDate = DateComponents(year: today.year, month: today.month, day: today.day, hour: 0, minute: 0, second: 0)
-            let endDate = DateComponents(year: today.year, month: today.month, day: today.day, hour: 23, minute: 59, second: 59)
+            healthStore.requestAuthorization(toShare: [], read: readTypes, completion: {success, error in
+                if success == false {
+                    print("データにアクセスできません")
+                    return
+                }
 
-            let predicate = HKQuery.predicateForSamples(
-                withStart: calendar.date(from: startDate),
-                end: calendar.date(from: endDate)
-            )
+                let calendar = Calendar.current
+                let hkTypeStepCount = HKObjectType.quantityType(forIdentifier: .stepCount)!
 
-            let query = HKSampleQuery(
-                queryDescriptors: [.init(sampleType: hkTypeStepCount, predicate: predicate)],
-                limit: 1,
-                resultsHandler: { query, samples, error in
-                print(samples)
+                let today = calendar.dateComponents([.calendar, .year, .month, .day], from: Date())
+                let startDate = DateComponents(year: today.year, month: today.month, day: today.day, hour: 0, minute: 0, second: 0)
+                let endDate = DateComponents(year: today.year, month: today.month, day: today.day, hour: 23, minute: 59, second: 59)
+
+                let predicate = HKQuery.predicateForSamples(
+                    withStart: calendar.date(from: startDate),
+                    end: calendar.date(from: endDate)
+                )
+
+                let query = HKSampleQuery(
+                    queryDescriptors: [.init(sampleType: hkTypeStepCount, predicate: predicate)],
+                    limit: 10,
+                    resultsHandler: { query, samples, error in
+                        print("<------ debug ------>")
+                        print(samples)
+                        print(error)
+                        print("<------ debug ------>")
+                    })
+
+                healthStore.execute(query)
             })
 
-            healthStore.execute(query)
         }
     }
 }
